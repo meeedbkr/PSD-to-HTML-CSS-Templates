@@ -83,9 +83,11 @@ section header>h3 {
     gap: 2em;
     height: 100%;
 }
-img{
-  max-width: 100%;
+
+img {
+    max-width: 100%;
 }
+
 /* Small */
 @media (min-width: 768px) {
     .container {
@@ -231,34 +233,38 @@ section>header {}
     font-size: 2em;
     color: var(--secondary-color);
 }
-#services article h4{
-  color: var(--main-color);
-  font-weight: bolder;
+
+#services article h4 {
+    color: var(--main-color);
+    font-weight: bolder;
 
 }
+
 #services article p {
     margin-left: 3.5rem;
     margin-top: 0em;
     font-size: .9em;
     color: #0009;
 }
-#services .col:last-child{
-  text-align: center;
-  padding: 2em;
-  text-align: center;
-  position: relative;
+
+#services .col:last-child {
+    text-align: center;
+    padding: 2em;
+    text-align: center;
+    position: relative;
 }
-#services .col:last-child:after{
-content: '';
-position: absolute;
-display: block;
-top: -0%;
-width: 80%;
-height: 100%;
-left: 30%;
-bottom: 10%;
-background: var(--secondary-color);
-z-index: -1;
+
+#services .col:last-child:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -0%;
+    width: 20%;
+    height: 100%;
+    right: 0%;
+    bottom: 10%;
+    background: var(--secondary-color);
+    z-index: -1;
 }
 
 @media (max-width: 1199px) {}
@@ -267,9 +273,82 @@ z-index: -1;
 /* Start Portfolio */
 #portfolio {}
 
+#portfolio .row {
+    margin-top: 100px;
+}
+
+#portfolio article {
+    padding: 1em;
+    background: #fff;
+    border-radius: .5em;
+}
+
+#portfolio article h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#portfolio article p {
+    margin-top: 0em;
+    font-size: .9em;
+    color: #0009;
+}
+
 /* End Portfolio */
 /* Start About */
 #about {}
+
+#about strong {}
+
+#about hr {
+    border: 1px solid var(--secondary-color);
+    width: 40%;
+    margin: 2em 0;
+}
+
+#about p {
+    color: #0009;
+}
+
+#about .row {
+    height: 100%;
+}
+
+#about .col {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 400px;
+}
+#about .col:first-child:after{
+content: '';
+position: absolute;
+background: var(--secondary-color);
+top: -2em;
+bottom: -2em;
+left: -2em;
+width: 4em;
+z-index: -1;
+}
+#about .col:first-child:before{
+content: '';
+position: absolute;
+background: transparent;
+top: -2em;
+bottom: 2em;
+left: calc(270px - 3em);
+width: 20%;
+z-index: -1;
+border: 3em solid var(--main-color);
+border-width: 0 0 3em 5em;
+}
+#about img {
+/*    max-height: 100%;*/
+width: 270px;
+position: relative;
+}
 
 @media (max-width: 991px) {}
 
