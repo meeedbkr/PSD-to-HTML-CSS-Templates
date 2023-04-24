@@ -104,7 +104,57 @@ img{
 
 /* End Components */
 /* Start Header */
+header#menu {
+    color: var(--section-background);
+    position: fixed;
+    top: 0;
+    background: #fff;
+    right: 0;
+    left: 0;
+    /*    padding: var(--section-padding) 0;*/
+    z-index: 10;
+    height: 50px;
+}
 
+header#menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header#menu .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    /*    font-size: 1.2em;*/
+}
+
+header#menu .logo .spacial {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    font-weight: 900;
+
+}
+
+header#menu i {
+    color: var(--secondary-color);
+
+    font-size: 1.5em;
+    transition: var(--main-duration) ease;
+    cursor: pointer;
+    padding: .3em;
+}
+
+header#menu i:hover {
+    transform: rotate(180deg);
+    color: var(--main-color);
+
+}
+
+header#menu .container ul {
+    display: none;
+}
 
 /* End Header */
 /* Start Landing Section */
