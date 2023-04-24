@@ -1,0 +1,149 @@
+/* Start Variables */
+:root {
+    --main-color: #060047;
+    --secondary-color: #E90064;
+    --section-padding: 1.3em;
+    --section-background: #FF5F9E;
+    --main-duration: 0.5s;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main,
+section {
+    height: 100vh;
+    max-height: 800px;
+    padding-top: 4em;
+}
+
+section:nth-child(2n) {
+    background: var(--secondary-color);
+}
+
+section header>h2 {
+    font-size: 6em;
+    margin: 0;
+    color: var(--main-color);
+    letter-spacing: -.05em;
+    opacity: .2;
+    text-align: center;
+}
+
+section header>h3 {
+    font-size: 1.2em;
+    margin-top: -1.5em;
+    font-weight: 400;
+    color: #a2a2a2;
+    letter-spacing: -.1em;
+    text-align: center;
+    margin-bottom: 4em;
+
+}
+
+.row {
+    display: flex;
+    gap: 3em;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 100%;
+}
+img{
+  max-width: 100%;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Components */
+@media (max-width: 767px) {}
+
+/* End Components */
+/* Start Header */
+
+
+/* End Header */
+/* Start Landing Section */
+#landing {
+    position: relative;
+}
+
+
+/* End Landing Section */
+/* Start Features */
+#features {}
+
+section>header {}
+
+/* End Features */
+/* Start Services  */
+#services {}
+
+
+@media (max-width: 1199px) {}
+
+/* Start Services  */
+/* Start Portfolio */
+#portfolio {}
+
+/* End Portfolio */
+/* Start About */
+#about {}
+
+@media (max-width: 991px) {}
+
+/* End About */
+/* Start Contact */
+#contact {}
+
+@media (max-width: 767px) {}
+
+/* End Contact */
+/* Start Footer */
+footer {}
+
+/* End Footer */
