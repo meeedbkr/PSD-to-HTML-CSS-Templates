@@ -87,6 +87,19 @@ section header>h3 {
 img {
     max-width: 100%;
 }
+ .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    /*    font-size: 1.2em;*/
+}
+
+ .logo .spacial {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    font-weight: 900;
+
+}
 
 /* Small */
 @media (min-width: 768px) {
@@ -134,19 +147,7 @@ header#menu .container {
     height: 100%;
 }
 
-header#menu .logo {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    /*    font-size: 1.2em;*/
-}
 
-header#menu .logo .spacial {
-    color: var(--secondary-color);
-    font-size: 1.3em;
-    font-weight: 900;
-
-}
 
 header#menu i {
     color: var(--secondary-color);
@@ -354,12 +355,48 @@ position: relative;
 
 /* End About */
 /* Start Contact */
-#contact {}
+#contact {text-align: center;}
+#contact h4{
+    margin: 4em 0 1em;
+    color: var(--main-color);
+    font-size: 2.5em;
+}
+#contact address{
+    margin:em;
+}
+#contact address a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-style: none;
+    letter-spacing: 1px;
+}
+#contact address a i {
+    font-size: .9em;
+    margin-left:10px;
+    transition: var(--main-duration);
+}
+#contact address a i:hover {
+    color: var(--main-color);
+}
 
 @media (max-width: 767px) {}
 
 /* End Contact */
 /* Start Footer */
-footer {}
+footer {
+    padding: 2em;
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer .logo{
+    color: white !important;
+}
 
 /* End Footer */
