@@ -26,6 +26,7 @@ body {
 
 .container {
     margin: auto;
+    padding: auto 2% !important ;
 }
 
 main,
@@ -137,7 +138,6 @@ header#menu {
     background: #fff;
     right: 0;
     left: 0;
-    /*    padding: var(--section-padding) 0;*/
     z-index: 10;
     height: 50px;
 }
@@ -517,4 +517,55 @@ footer .logo {
         font-size: 1.3em;
     }
 
+}
+@media (max-width: 426px) {
+.container{
+    padding: 10px;
+}
+section header>h2{
+    font-size: 4em;
+}
+section header>h3{
+    font-size: 1em;
+}
+#services article{
+    text-align: center;
+}
+#services article header{
+    flex-direction: column;
+}
+#services article p{
+    margin-left: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+#services article .icon{
+    font-size: 4em;
+
+}
+#services article h4{
+    font-size: 1.3em;
+    margin: 20px;
+}
+#services article{
+    margin-bottom: 60px;
+}
+.col article {
+    align-self: center;
+    max-width: 90%;
+}
+#about .col {
+    padding: 0;
+    text-align: justify;
+}
+#about hr{
+    margin: 10px;
+}
+#contact{
+    height: auto;
+    padding-bottom: 200px;
+}
+#contact h4{
+    font-size: 1.4em;
+}
 }
