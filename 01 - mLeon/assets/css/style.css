@@ -162,9 +162,7 @@ header#menu i:hover {
     transform: rotate(180deg);
     color: var(--main-color);
 }
-header#menu i:hover + ul{
-    display: block;
-}
+
 header#menu .container nav{
     position: relative;
 }
@@ -177,6 +175,9 @@ header#menu .container ul {
     background: #fff;
     list-style: none;
     transition: var(--main-duration);
+}
+header#menu i + ul.active{
+    display: block;
 }
 header#menu .container ul a{
     color: var(--main-color);
