@@ -1,0 +1,262 @@
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+}
+
+header,
+.dots,
+.navs,
+.scroll,
+.socials {
+    position: fixed;
+    color: #fff;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Components */
+@media (max-width: 767px) {}
+
+/* End Components */
+/* Start Header */
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    flex: 3;
+}
+.logo span{
+    cursor: pointer;
+}
+header nav ul {
+    display: flex;
+}
+
+header nav ul a {
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+header nav ul a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    transition: var(--main-duration);
+}
+
+header nav ul a:hover:before {
+    width: 100%;
+}
+
+header .logo span {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/*fixed components*/
+.dots {
+    bottom: 50px;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dots .dot {
+    display: block;
+    outline: 2px solid #fff;
+    border: 2px solid #0009;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--main-duration);
+}
+
+.dots .dot:hover {
+    box-shadow: 0px 0px 20px #fff;
+    background: #fff;
+}
+
+.dots .dot.active {
+    background: #fff;
+}
+
+.navs {
+    left: 30px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navs .nav {
+    height: 4px;
+    width: 30px;
+    background: white;
+    border-radius: 2px;
+    transition: var(--main-duration);
+    cursor: pointer;
+}
+.navs .nav:hover{
+  width: 50px;
+    box-shadow: 0px 0px 20px #fff;
+}
+.navs .nav.active{
+  width: 50px;
+}
+.scroll {
+    left: 0px;
+    bottom: 200px;
+    transform: rotate(90deg);
+
+}
+.socials {
+    right: 40px;
+    bottom: 30px;
+}
+.socials .social{
+  font-size: 1.6em;
+  margin: .8em 0;
+  filter: blur(1px);
+  cursor: pointer;
+  transition: var(--main-duration);
+
+}
+.socials .social:hover{
+  filter: blur(0px);
+}
+
+.scroll:after {
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 100px;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+/* End Header */
+/* Start Landing Section */
+#landing {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #0009, #000b), url('../imgs/snake2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* End Landing Section */
+/* Start Features */
+#features {}
+
+/* End Features */
+/* Start Services  */
+#services {}
+
+@media (max-width: 1199px) {}
+
+/* Start Services  */
+/* Start Portfolio */
+#portfolio {}
+
+/* End Portfolio */
+/* Start About */
+#about {}
+
+@media (max-width: 991px) {}
+
+/* End About */
+/* Start Contact */
+#contact {}
+
+@media (max-width: 767px) {}
+
+/* End Contact */
+/* Start Footer */
+#footer {}
+
+/* End Footer */
