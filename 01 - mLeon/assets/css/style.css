@@ -161,12 +161,51 @@ header#menu i {
 header#menu i:hover {
     transform: rotate(180deg);
     color: var(--main-color);
-
 }
-
+header#menu i:hover + ul{
+    display: block;
+}
+header#menu .container nav{
+    position: relative;
+}
 header#menu .container ul {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 70%;
+    padding: .5em 2em;
+    background: #fff;
+    list-style: none;
+    transition: var(--main-duration);
 }
+header#menu .container ul a{
+    color: var(--main-color);
+    text-decoration: none;
+    display: block;
+    padding: .4em 3em .4em 1em;
+    margin: .5em 0em;
+    font-weight: 600;
+    transition: var(--main-duration);
+    position: relative;
+}
+header#menu .container ul a:after{
+content: '';
+position: absolute;
+display: block;
+width: 0%;
+left: 0;
+height: 3px;
+background: var(--secondary-color);
+transition: var(--main-duration);
+}
+header#menu .container ul a:hover:after{
+    width: 90%;
+}
+header#menu .container ul a:hover{
+    transform: translateX(1em);
+    color: var(--secondary-color);
+}
+
 
 /* End Header */
 /* Start Landing Section */
